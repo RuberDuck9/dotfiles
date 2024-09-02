@@ -95,7 +95,7 @@
         "spacing": 10
     },
     "clock": {
-        // "timezone": "America/New_York",
+        // "timezone":"America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
@@ -138,7 +138,7 @@
         "bat": "BAT2"
     },
     "power-profiles-daemon": {
-      "format": "{icon}",
+      "format": "  {icon}",
       "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
       "tooltip": true,
       "format-icons": {
@@ -159,7 +159,7 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
+        "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",

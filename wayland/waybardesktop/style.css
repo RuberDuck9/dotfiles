@@ -5,8 +5,8 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    background-color: rgba(57, 58, 141, 0.6);
+    border-bottom: 3px solid rgba(133, 172, 201, 0.5);
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -50,7 +50,7 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: transparent;
 }
 
 #workspaces button {
@@ -77,7 +77,9 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
-#clock,
+#clock {
+    background-color: transparent;
+}
 #battery,
 #cpu,
 #memory,
@@ -114,7 +116,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: transparent;
 }
 
 #battery {
@@ -194,8 +196,8 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 #pulseaudio.muted {
@@ -235,7 +237,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: transparent;
 }
 
 #tray > .passive {
