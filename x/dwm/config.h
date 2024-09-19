@@ -61,6 +61,8 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *nemocmd[] = { "thunar", NULL };
 static const char *flamcmd[] = { "flameshot", "gui", NULL};
+static const char *volupcmd[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL};
+static const char *voldowncmd[] = { "pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL};
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -68,6 +70,8 @@ static const Key keys[] = {
         { MODKEY,                       XK_s,	   spawn,          {.v = flamcmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY, 		        XK_n,      spawn,          {.v = nemocmd } },
+        { MODKEY,                       XK_y,	   spawn,          {.v = volupcmd } },
+        { MODKEY,      	                XK_u,	   spawn,          {.v = voldowncmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
