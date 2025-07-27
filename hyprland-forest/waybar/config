@@ -1,6 +1,6 @@
 {
 "include": "~/.config/waybar/modules",
-"layer": "top",
+"layer": "bottom",
 "exclusive": true,
 "passthrough": false,
 "position": "top",
