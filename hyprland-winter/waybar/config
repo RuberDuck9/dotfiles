@@ -1,0 +1,30 @@
+{
+"include": "~/.config/waybar/modules",
+"layer": "bottom",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 6,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 0,
+"margin-left": 0,
+"margin-right": 0,
+
+"modules-left": [
+	"hyprland/workspaces",
+	],
+
+"modules-center": [
+	"hyprland/window"
+	],
+
+"modules-right": [ 
+	"tray", 
+  "memory",
+  "cpu",
+	"network",  
+	"pulseaudio",
+  "clock"
+  ]
+}
